@@ -1,0 +1,16 @@
+--cpu Cortex-M7.fp.dp
+"ll_h750_exti1\startup_stm32h750xx.o"
+"ll_h750_exti1\main.o"
+"ll_h750_exti1\stm32h7xx_it.o"
+"ll_h750_exti1\stm32h7xx_ll_exti.o"
+"ll_h750_exti1\stm32h7xx_ll_gpio.o"
+"ll_h750_exti1\stm32h7xx_ll_rcc.o"
+"ll_h750_exti1\stm32h7xx_ll_utils.o"
+"ll_h750_exti1\stm32h7xx_ll_lpuart.o"
+"ll_h750_exti1\stm32h7xx_ll_bdma.o"
+"ll_h750_exti1\stm32h7xx_ll_pwr.o"
+"ll_h750_exti1\system_stm32h7xx.o"
+--strict --scatter "LL_H750_EXTI1\LL_H750_EXTI1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LL_H750_EXTI1.map" -o LL_H750_EXTI1\LL_H750_EXTI1.axf
